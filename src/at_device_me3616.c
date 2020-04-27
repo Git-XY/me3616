@@ -30,7 +30,7 @@
 #define LOG_TAG                         "at.dev.me3616"
 #include <at_log.h>
 
-#ifdef AT_DEVICE_USING_ME3616
+#ifdef PKG_USING_ME3616
 
 #ifndef ME3616_DEEP_SLEEP_EN
 #define ME3616_DEEP_SLEEP_EN              0//module support deep sleep mode
@@ -943,5 +943,5 @@ static int me3616_device_class_register(void)
 }
 INIT_DEVICE_EXPORT(me3616_device_class_register);
 
-#endif /* AT_DEVICE_USING_ME3616 */
+#endif /* PKG_USING_ME3616 */
 

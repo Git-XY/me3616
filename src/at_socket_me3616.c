@@ -30,7 +30,7 @@
 #define LOG_TAG                        "at.skt.me3616"
 #include <at_log.h>
 
-#if defined(AT_DEVICE_USING_ME3616) && defined(AT_USING_SOCKET)
+#if defined(PKG_USING_ME3616) && defined(AT_USING_SOCKET)
 
 #define ME3616_MODULE_SEND_MAX_SIZE       512
 
@@ -590,5 +590,5 @@ int me3616_socket_class_register(struct at_device_class *class)
     return RT_EOK;
 }
 
-#endif /* AT_DEVICE_USING_ME3616 && AT_USING_SOCKET */
+#endif /* PKG_USING_ME3616 && AT_USING_SOCKET */
 
