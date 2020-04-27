@@ -5,6 +5,7 @@ path = [cwd + '/inc']
 src   = []
 # ME3616
 if GetDepend(['PKG_USING_ME3616']):
+    src += Glob('src/at_device.c')
     src += Glob('src/at_device_me3616.c')
     if GetDepend(['AT_USING_SOCKET']):
         src += Glob('src/at_socket_me3616.c')
