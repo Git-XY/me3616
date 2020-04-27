@@ -2,7 +2,7 @@ from building import *
 
 cwd = GetCurrentDir()
 path = [cwd + '/inc']
-
+src   = []
 # ME3616
 if GetDepend(['PKG_USING_ME3616']):
     src += Glob('src/at_device_me3616.c')
